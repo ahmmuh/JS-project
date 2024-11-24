@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="container bg-pink-400 text-white mx-auto p-2 md:px-10">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-center md:text-left mb-4 md:mb-0">Logo</div>
+        <ul
+          class="flex flex-col md:flex-row md:space-x-6 mb-4 md:mb-0 text-center md:text-left">
+          <a href="#" class="hover:text-blue-300 p-3">Pricing </a>
+          <a href="#" class="hover:text-blue-300 p-3">Products </a>
+          <a href="#" id="jobBtn" class="hover:text-blue-300 p-3">Careers </a>
+          <a href="#" class="hover:text-blue-300 p-3">About </a>
+        </ul>
+        <button
+          class="bg-pink-400 md:w-32 h-19 py-2 hover:bg-pink-500 rounded-3xl border-none">
+          Login
+        </button>
+      </div>
+    </nav>
+    <div class="container mx-auto p-12">
+      <!-- header -->
+
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+        <div class="flex flex-col justify-center md:px-20">
+          <h2 class="font-bold font-sans text-5xl py-2">
+            Welcome to Tailwind css Crash course
+          </h2>
+          <p class="text-2xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            accusamus totam blanditiis impedit alias est ratione voluptates?
+            Doloremque, sequi natus quam praesentium, perspiciatis tempora
+            laboriosam modi atque a voluptatum fugiat.
+          </p>
+          <button
+            class="bg-pink-400 text-white p-4 hover:bg-pink-500 rounded-3xl w-60 text-center my-10 hover:text-white">
+            Get Started
+          </button>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <img
+            src="https://picsum.photos/seed/picsum/400/300"
+            class="rounded-l-3xl border-l-4 object-cover" />
+        </div>
+      </div>
+
+      <!-- header ends -->
+
+      <!-- about -->
+
+      <div
+        id="#about"
+        class="grid grid-cols-1 md:grid-cols-2 justify-between items-center md:mt-20">
+        <div class="p-5 md:p-20">
+          <h3 class="text-4xl font py-3">
+            About Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+            quos!
+          </h3>
+          <p class="border-l-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Architecto, aliquam cum. Beatae unde nemo esse eveniet maxime ex
+            nihil eius architecto, sequi accusamus, omnis excepturi neque vel
+            doloremque reiciendis quae veritatis quibusdam enim quo atque soluta
+            recusandae voluptatem a harum!
+          </p>
+        </div>
+        <div class="">
+          <img
+            src="https://picsum.photos/400/300"
+            class="object-cover"
+            alt="Abot Image" />
+        </div>
+      </div>
+      <!-- about ends -->
+
+      <!-- Pricing -->
+      <h5 class="text-center text-4xl p-4">Lediga jobb</h5>
+
+      <div class="flex justify-center items-center mt-10 mb-20">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 mb-20 md:p-3 md:mx-20 gap-10"
+          id="jobContainer"></div>
+      </div>
+
+      <!-- Pricing ends -->
+    </div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
